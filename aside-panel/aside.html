@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="asideStyles.css">
+    <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="aside-panel-styles.css">
 </head>
 <body>
-    <div class="wrapper">
         <aside class="aside-panel">
             <header class="header">
-                <div class="users-panel">
-                    <div class="users-panel__container burger-cross">
-                        <button class="users-panel__item">
+                <div class="panel">
+                    <div class="panel__container panel__container--transform burger-cross">
+                        <button class="panel__item">
                             Закрыть меню
                         </button>
                     </div>
-                    <div class="users-panel__container image">
-                        <img src='Group.svg' alt="CPS group" title="Фирма CPS">
+                    <div class="panel__container  image">
+                        <img src='Group_97px.svg' alt="CPS group" title="Фирма CPS">
                     </div>
-                    <div class="users-panel__container search">
-                        <button class="users-panel__item">
+                    <div class="panel__container panel__container--transform search">
+                        <button class="panel__item">
                             Поиск
                         </button>
                     </div>
@@ -26,17 +25,49 @@
             </header>
             <article class="menu">
                 <ul class="menu__list">
-                    <li class="menu__item">Ремонт техники</li>
-                    <li class="menu__item">Услуги и сервисы</li>
-                    <li class="menu__item">Корпоративным клиентам</li>
-                    <li class="menu__item">Продавцам техники</li>
-                    <li class="menu__item">Партнерам</li>
-                    <li class="menu__item">Производителям</li>
-                    <li class="menu__item">Наши сервисные центры</li>
-                    <li class="menu__item">Контакты</li>
+                    <li class="menu__item menu__item--checked"><a class='menu__link active' href="#">Ремонт техники</a></li>
+                    <li class="menu__item"><a class='menu__link' href="#">Услуги и сервисы</a></li>
+                    <li class="menu__item"><a class='menu__link ' href="#">Корпоративным клиентам</a></li>
+                    <li class="menu__item"><a class='menu__link ' href="#">Продавцам техники</a></li>
+                    <li class="menu__item"><a class='menu__link ' href="#">Партнерам</a></li>
+                    <li class="menu__item"><a class='menu__link' href="#">Производителям</a></li>
+                    <li class="menu__item"><a class='menu__link' href="#">Наши сервисные центры</a></li>
+                    <li class="menu__item"><a class='menu__link' href="#">Контакты</a></li>
                 </ul>
             </article>
-            <footer class="footer"></footer>
+            <footer class="footer">
+                <div class="panel panel--footer">
+                    <div class="panel_feed-back-group">
+                        <div class="panel__container panel__container--transform call">
+                            <button class="panel__item">
+                                Перезвоните мне
+                            </button>
+                        </div>
+                        <div class="panel__container panel__container--transform chat">
+                            <button class="panel__item">
+                                Чат с поддержкой
+                            </button>
+                        </div>
+                        <div class="panel__container panel__container--transform profile">
+                            <button class="panel__item">
+                                Профиль пользователя
+                            </button>
+                        </div>
+                    </div>
+                    <div class="panel__container panel__container--tel">
+                        <a href="mailto:mail@cps.com" class="panel__email">mail@cps.com</a>
+                    </div>
+                    <div class="panel__container panel__container--email">
+                        <a href="tel:88008908900" class="panel__tel">8 800 890 8900</a>
+                    </div>
+
+                    <div class="language-panel">
+                        <div class="language-panel__item language-panel__item--active">RU</div>
+                        <div class="language-panel__item ">EN</div>
+                        <div class="language-panel__item">CH</div>
+                    </div>
+                </div>
+            </footer>
         </aside>
-    </div>
+
 </body>

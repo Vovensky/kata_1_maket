@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="swiper__styles.css"/>
+    <link rel="stylesheet" href="../fonts.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <section class="services">
+        <header class="services-header">
+            <p class="services-header__title">Ремонт техники различных брендов</p>
+        </header>
+        <section class="swiper services__section">
+            <div class="swiper-wrapper services__wrapper">
+                <article class="swiper-slide services-article">
+                    <div class="services-container services-article__container">
+                        <img src="media/lenovo.png" alt="lenovo" class="services-main__item"/>
+                        <a href="#" class="serices__link--centred">
+                            <img src="media/go.svg" alt="follow link" class="services-main__item"/>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="swiper-slide services-article">
+                    <div class="services-container services-article__container">
+                        <img src="media/samsung.png" alt="samsung" class="services-main__item"/>
+                        <a href="#" class="serices__link--centred">
+                            <img src="media/go.svg" alt="follow link" class="services-main__item"/>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="swiper-slide services-article">
+                    <div class="services-container services-article__container">
+                        <img src="media/apple.png" alt="apple notebooks" class="services-main__item"/>
+                        <a href="#" class="serices__link--centred"> 
+                            <img src="media/go.svg" alt="follow link" class="services-main__item"/>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="swiper-slide services-article">
+                    <div class="services-container services-article__container">
+                        <img src="media/viewSonic.png" alt="follow link" class="services-main__item"/>
+                        <a href="#" class="serices__link--centred">
+                            <img src="media/go.svg" alt="follow link" class="services-main__item"/>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="swiper-slide services-article">
+                    <div class="services-container services-article__container">
+                        <img src="media/bosch.png" alt="viewSonic" class="services-main__item"/>
+                        <a href="#" class="serices__link--centred">
+                            <img src="media/go.svg" alt="follow link" class="services-main__item"/>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="swiper-slide services-article">
+                    <div class="services-container services-article__container">
+                        <img src="media/hp.png" alt="bosch" class="services-main__item"/>
+                        <a href="#" class="serices__link--centred">
+                            <img src="media/go.svg" alt="follow link" class="services-main__item"/>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="swiper-slide services-article">
+                    <div class="services-container services-article__container">
+                        <img src="media/acer.png" alt="acer" class="services-main__item"/>
+                        <a href="#" class="serices__link--centred">
+                            <img src="media/go.svg" alt="follow link" class="services-main__item"/>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="swiper-slide services-article">
+                    <div class="services-container services-article__container">
+                        <img src="media/sony.png" alt="follow link" class="services-main__item"/>
+                        <a href="#" class="serices__link--centred">
+                            <img src="media/go.svg" alt="follow link" class="services-main__item"/>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="swiper-slide services-article">
+                    <div class="services-container services-article__container">
+                        <img src="media/LENOVO (2).png" alt="lenovo" class="services-main__item"/>
+                        <a href="#" class="serices__link--centred">
+                            <img src="media/go.svg" alt="follow link" class="services-main__item"/>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="swiper-slide services-article">
+                    <div class="services-container services-article__container">
+                        <img src="media/samsung (2).png" alt="samsung" class="services-main__item"/>
+                        <a href="#" class="serices__link--centred">
+                            <img src="media/go.svg" alt="follow link" class="services-main__item"/>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="swiper-slide services-article">
+                    <div class="services-container services-article__container">
+                        <img src="media/apple (2).png" alt="apple" class="services-main__item"/>
+                        <a href="#" class="serices__link--centred">
+                            <img src="media/go.svg" alt="follow link" class="services-main__item"/>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="swiper-pagination swiper-pagination--positioned"></div>
+        </section>
+        <button class="services__button">Показать всё</button>
+
+    </section>
+
+<script>
+let condition = '(min-width: 768px)';
+let swiper = false;
+
+
+function swiperInit(mediaQuery, elem, settings) {
+    if(mediaQuery.matches && swiper) {
+        swiper.destroy();
+        swiper = false;
+    } else if(!mediaQuery.matches && !swiper) {
+        swiper = new Swiper(elem, settings)
+    }
+}
+
+function checkWidth(condition) {
+    let matchMedia = window.matchMedia(condition);
+    let settings = {
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: 'auto',
+            spaceBetween: 16,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        };
+    let elem = '.swiper';
+    swiperInit(matchMedia, elem, settings);
+    matchMedia.addEventListener('change', () => swiperInit(matchMedia, elem, settings))
+}
+
+window.addEventListener('DOMContentLoaded', () => checkWidth(condition));
+
+
+let button = document.querySelector('.services__button');
+let container = document.querySelector('.services__wrapper');
+let containerHeight = container.clientHeight;
+let opened = false;
+
+button.addEventListener('click', () => {
+    openClose()
+})
+
+function openClose() {
+    let containerScrollHeight = container.scrollHeight;
+    if(!opened) {
+        container.style.maxHeight = containerScrollHeight + 'px';
+        button.textContent ='Скрыть';
+        opened = true;
+        button.classList.add('services__button--clicked');
+
+    } else {
+        containerHeight = containerHeight < 160 ? 160: containerHeight;
+        container.style.maxHeight = containerHeight + 'px';
+        button.textContent='Показать всё';
+        opened = false;
+        button.classList.remove('services__button--clicked')
+
+    }
+
+}
+
+
+
+
+/*() => {
+    let swiper = false;
+    let mediaQuery = window.matchMedia('(min-width: 768px)');
+    checkWidth()
+
+
+
+
+    if(!width) {
+        swiper = new Swiper('.swiper', settings);
+    } else if(!width && swiper) {
+            swiper.destroy()
+    }
+
+    width.addEventListener('change', function() {
+        if(width && swiper) {
+            swiper.destroy();
+            swiper = false
+        } else {
+            swiper = new Swiper('.swiper', settings)
+        }
+    })
+
+    /*window.addEventListener('resize', () => {
+        swiperInit('(min-width: 768px)').matches
+        windowWidth = window.innerWidth;
+        if(swiper && windowWidth > width) {
+            swiper.destroy();
+            swiper = false;
+        } else {
+            if(!swiper && windowWidth < width) {
+                swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: 'auto',
+            spaceBetween: 16,
+            mousewheel: {
+                sensitivity: 1,
+                eventsTarget:".swiper"
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+            }
+        }
+    })*/
+
+
+
+/*const checker = function () {
+  if (breakpoint.matches) {
+    return enableSwiper(swiperClass, swiperSettings)
+  } else {
+    if (swiper !== undefined) swiper.destroy(true, true)
+    return
+  }
+}
+*/
+
+/*
+function swiperInit() {
+    if(windowWidth < width) {
+        swiper = new Swiper('.swiper', swiperSettings);
+        }
+    }
+
+function swiperResizing() {
+    windowWidth = window.innerWidth;
+        if(swiper && windowWidth > width) {
+            swiper.destroy(true, true);
+            swiper = false;
+        } else {
+            if(!swiper && windowWidth < width) {
+                swiper = new Swiper('.swiper', swiperSettings);
+            }
+        }
+    }*/
+
+</script>
+
+</body>

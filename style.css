@@ -1,6 +1,4 @@
-html {
-    background-color: white
-}
+
 * {
     margin:0;
     padding: 0;
@@ -244,7 +242,6 @@ body {
 }
 
 .article__image {
-    width: 100%;
     height: auto;
     width: 320px;
 
@@ -382,8 +379,8 @@ body {
     }
 
     .article__image {
-        width: 100%;
-        height: auto;
+        width: 360px;
+        height: 100%;
     }
 }
 
@@ -501,6 +498,11 @@ body {
 
     .article {
         height: 360px;
+    }
+
+    .article__image {
+        width: 100%;
+        height: auto;
     }
 
 

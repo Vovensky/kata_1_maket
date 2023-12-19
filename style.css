@@ -370,7 +370,7 @@ body {
     }
 
     .article__read-more-button {
-        padding-top:10px;
+        padding-top: 7px;
         padding-bottom: 0;
         margin: 0
 
@@ -509,6 +509,10 @@ body {
 
     .article {
         height: 360px;
+    }
+
+    .article__read-more-button {
+        padding-top: 10px
     }
 
     .article__image {

@@ -9,56 +9,53 @@
     <title>Услуги и сервисы</title>
 </head>
 <body>
-    <header class="header">
-        <div class="users-panel">
-            <div class="users-panel__container burger">
-                <button class="users-panel__item" >
-                   Меню
+        <header class="header">
+            <div class="users-panel">
+                
+                <button class="users-button burger burger--positioned " >
+                    <div class="users-button__text">Меню</div>
+                    <div class="users-button__background"></div>
+                </button>
+
+                <a href="#" class="image"><img src='Group.svg' alt="CPS group" title="Фирма CPS"/></a>
+
+                <button class="users-button  chat">
+                    <div class="users-button__text">Открыть чат с сотрудником</div><div class="users-button__background"></div>
+                </button>
+                
+                    
+                <button class="users-button repair repair--positioned" data-text="Оставить заявку">
+                    <div class="users-button__text">Оставить заявку</div><div class="users-button__background"></div>
+                </button>
+
+                <button class="users-button call call--positioned"> 
+                    <div class="users-button__text">Перезвоните мне</div><div class="users-button__background"></div>
+                    </button>
+                        
+                <button class="users-button check-Status check-Status--positioned" data-text="Статус ремонта">
+                    <div class="users-button__text ">Cтатус ремонта</div><div class="users-button__background"></div>
+                </button>
+
+                
+                <button class="users-button profile profile--positioned">
+                    <div class="users-button__text">Войти в аккаунт</div><div class="users-button__background"></div>
+                </button>
+            </div> 
+            
+        </header>
+
+        <main class="main">
+            <div class="title-wrapper title-wrapper--positioned">
+                <h1 class="title title--positioned">Услуги и сервисы</h1>
+                <button class="users-button repair repair--positioned users-button--positioned" data-text="Оставить заявку">
+                    <div class="users-button__text users-button__text--positioned">Оставить заявку</div><div class="users-button__background"></div>
+                </button>
+                <button class="users-button check-Status check-Status--positioned" data-text="Статус ремонта">
+                    <div class="users-button__text users-button__text--positioned">Cтатус ремонта</div><div class="users-button__background"></div>
                 </button>
             </div>
-
-            <div class="users-panel__container image">
-                <img src='Group.svg' alt="CPS group" title="Фирма CPS">
-            </div>
-
-            <div class="users-panel__container chat">
-                <button class="users-panel__item">
-                    Открыть чат с сотрудником
-                </button>
-            </div>
-
-            <div class="users-panel__container repair">
-                <label for="submit-app" id="submit-app-label" class="users-panel__label">Оставить заявку </label>
-                <button class="users-panel__item" id="submit-app">
-                   Оставить заявку
-                </button>
-            </div>
-
-            <div class="users-panel__container call">
-                <button class="users-panel__item"> Перезвоните мне</button>
-            </div>
-            <div class="users-panel__container check-Status">
-                <label id="repair-status-label" for="repair-status" class="users-panel__label">Статус ремонта</label>
-                <button class="users-panel__item" id="repair-status">
-                    Проверить статус ремонта
-                </button>
-            </div>
-
-            <div class="users-panel__container profile">
-                <button class="users-panel__item">
-                    Войти в аккаунт
-                </button>
-            </div>
-        </div>
-
-        <div class="title">
-            <div class="title__container">
-                <h1 class="title__theme">Услуги и сервисы</h1>
-            </div>
-        </div> 
-        
-        <nav class="services">
-                <ul class="services__list">
+            <nav class="services">
+                <ul class="services__list services__list--positioned">
                     <li class="services__item">
                         <button type='button' class="services__btn" autofocus>
                             <span class='services__text'>Ремонтируемые бренды</span>
@@ -91,32 +88,34 @@
                     </li>
                 </ul>
             </nav>
-  
-    </header>
+            <article class="article">
+                <section class="article__section article__position">
 
-    <main class="main">
-        <article class="article">
-            <section class="article__section">
+                        <p class="article__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+                        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
 
-                    <p class="article__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
-                    Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-
-                    <p class="article__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, 
-                    что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-                    </p>
-                </div>
-            </section>
-            <div class="article__footer">
-                <button class="article__readmore-btn" id="article__readmore-btn"></button>
-                <label id='label' for="article__readmore-btn" class="article__readmore-label">Читать далее</label>
-            </div>    
-            <aside class="article__image-container">
-            </aside>  
-        </article>
-       
-
-    </main>
+                        <p class="article__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, 
+                        что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                        </p>
+                    </div>
+                </section>
+                
+                <button class="users-button article__read-more-button article__position">
+                    <div class="article__read-more-text">Читать далее</div>
+                </button>
+          
+                <div class="article__image-container">
+                    <img src="./_MG_3223 (1).png" alt="CPS__logotype" title="our logotype" class="article__image">
+                </div>  
+            </article>
+        </main>
 
     <script>
+        let buttons = document.querySelectorAll('.users-button')
+        for(let button of buttons) {
+            button.addEventListener('click', () => {
+                console.log('click')
+            })
+        }
     </script>
 </body>

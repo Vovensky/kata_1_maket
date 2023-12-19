@@ -77,7 +77,7 @@ body {
 .users-button__text {
     position: absolute;
     opacity: 0;
-    top: -50px;
+    top: -100px;
 }
 
 .burger {
@@ -188,16 +188,19 @@ body {
 
 .article {
     display: block;
-    padding-left: 16px;
-    padding-right: 16px;
+
     
 }
  
-.article__section {
-    margin-bottom: 16px;
+.section {
     height:90px;
     overflow: hidden;
     
+}
+
+.article__position {
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .article__text {
@@ -218,7 +221,7 @@ body {
 
 .article__read-more-button {
     display: flex;
-    margin-bottom: 16px;
+    padding: 16px;
 }
 
 .article__read-more-text {
@@ -243,7 +246,9 @@ body {
 
 .article__image {
     height: auto;
-    width: 320px;
+    width: 100%;
+    object-fit: contain;
+    max-height: 230px
 
 }
 
@@ -347,22 +352,28 @@ body {
         height: 208px;
         flex-direction: column;
         flex-wrap: wrap;
-        padding-left: 24px;
-        padding-right: 24px;
     }
 
 
-    .article__section {
+    .section {
         margin: 0;
         height: 160px;
         min-width: 360px;
         width: 50%;
-        margin-bottom: 10px;
+        
+    }
+
+    .article__position {
+        padding-left: 24px;
+        padding-right: 24px;
+
     }
 
     .article__read-more-button {
-        margin-bottom: 0px;
-        margin-top:0px;
+        padding-top:10px;
+        padding-bottom: 0;
+        margin: 0
+
     }
 
     .article__text {
@@ -379,8 +390,8 @@ body {
     }
 
     .article__image {
-        width: 360px;
-        height: 100%;
+        width: 100%;
+        max-height: 260px
     }
 }
 
@@ -502,7 +513,7 @@ body {
 
     .article__image {
         width: 100%;
-        height: auto;
+        max-height: 380px
     }
 
 

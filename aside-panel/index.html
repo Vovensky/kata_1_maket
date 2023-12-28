@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-        <aside class="aside-panel">
+    <aside class="aside-panel">
             <header class="panel panel--positioned">
                 <button class="users-button burger users-button--transform burger-cross" >
-                    <div class="users-button__text">Меню закрыть</div>
-                    <div class="users-button__background"></div>
+                    <img src="../burgerCROSS.svg" alt="Закрыть меню"/>
                 </button>
                 
                 <a href='#' class="header-panel__image"><img src='Group_97px.svg' alt="CPS group" title="Фирма CPS" ></a>
 
                 <button class="users-button users-button--transform search" >
-                    <div class="users-button__text">Поиск</div>
-                    <div class="users-button__background"></div>
+                    <img src="../search.svg" alt="Поиск"/>
                 </button>                
             </header>
-            <article class="menu">
+            <div class="menu">
                 <ul class="menu__list">
                     <li class="menu__item menu__item--checked"><a class='menu__link menu__link--positioned' href="#">Ремонт техники</a></li>
                     <li class="menu__item"><a class='menu__link menu__link--positioned' href="#">Услуги и сервисы</a></li>
@@ -31,44 +29,37 @@
                     <li class="menu__item"><a class='menu__link menu__link--positioned' href="#">Наши сервисные центры</a></li>
                     <li class="menu__item"><a class='menu__link menu__link--positioned' href="#">Контакты</a></li>
                 </ul>
-            </article>
+            </div>
             <footer class="footer footer--positioned">
-                <section class="panel panel--positioned panel--display_blocked">
+                <div class="panel panel--positioned panel--display_blocked">
                     
-                    <article class="buttons-container">
-                        <button class="users-button burger users-button--transform call" >
-                            <div class="users-button__text">Перезвоните мне</div>
-                            <div class="users-button__background"></div>
-                        </button>
-                        <button class="users-button burger users-button--transform chat" >
-                            <div class="users-button__text">Чат с поддержкой</div>
-                            <div class="users-button__background"></div>
-                        </button>
-                        <button class="users-button burger users-button--transform profile" >
-                            <div class="users-button__text">Профиль пользователя</div>
-                            <div class="users-button__background"></div>
-                        </button>
-                    </article>
+                        <div class="buttons-container">
+                            <button class="users-button burger users-button--transform call" >
+                                <img src="../call.svg" alt="Перезвоните мне"/>
+                            </button>
+                            <button class="users-button burger users-button--transform chat" >
+                                <img src="../chat.svg" alt="Чат"/>
+                            </button>
+                            <button class="users-button burger users-button--transform profile" >
+                                <img src="../profile.svg" alt="Войти в аккаунт"/>
+                            </button>
+                        </div>
 
-                                        
-                    <artcile class="panel panel--display_blocked">
-                        <a href="mailto:mail@cps.com" class="panel-item panel__email">mail@cps.com</a>
-                        <a href="tel:88008908900" class="panel-item panel__tel">8 800 890 8900</a>
-                    </article>
+                                            
+                        <div class="panel panel--display_blocked">
+                            <a href="mailto:mail@cps.com" class="panel-item panel__email">mail@cps.com</a>
+                            <a href="tel:88008908900" class="panel-item panel__tel">8 800 890 8900</a>
+                        </div>
 
-                    <article class="panel panel--positioned_s">
-                        <input type='radio' name='language' value="RU" class="panel__input" id='RU' checked >
-                        <label for="RU" class="panel__label">RU</label>
-                        <input type='radio' name='language' value="EN" class="panel__input" id='EN'>
-                        <label for="EN" class="panel__label">EN</label>
-                        <input type='radio' name='language' value="CH" class="panel__input" id='CH'>
-                        <label for="CH" class="panel__label">CH</label>
-                    </article>
-                </section>
-
-
-
-                
+                        <div class="panel panel--positioned_s">
+                            <input type='radio' name='language' value="RU" class="panel__input" id='RU' checked >
+                            <label for="RU" class="panel__label">RU</label>
+                            <input type='radio' name='language' value="EN" class="panel__input" id='EN'>
+                            <label for="EN" class="panel__label">EN</label>
+                            <input type='radio' name='language' value="CH" class="panel__input" id='CH'>
+                            <label for="CH" class="panel__label">CH</label>
+                        </div>
+                </div>  
             </footer>
-        </aside>
+    </aside>
 </body>

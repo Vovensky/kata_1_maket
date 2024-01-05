@@ -58,6 +58,7 @@ body {
 .services-item {
     box-sizing: border-box;
     width: 224px;
+    height: 72px;
     background-color: #FFF;
     border:1px solid #EAEAEA;
     display: flex;
